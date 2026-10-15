@@ -1,0 +1,101 @@
+{
+    "type": "events",
+    "results": [
+        {
+            "id": "D002",
+            "api_id": "shower-perseids-2026-08-13",
+            "name": "Perseids at maximum",
+            "type": "shower",
+            "date": "2026-08-13",
+            "time": "04:09:26",
+            "description": "The Earth crosses the densest part of a dust trail left by 109P/Swift-Tuttle, and the debris burns up at 59 km/s. Under a genuinely dark sky with the radiant overhead this is worth about 100 meteors an hour — a real sky and a real radiant altitude will give fewer, and a bright moon fewer still. Meteors appear all over the sky; they only trace back to Perseus, which is where to point a camera and not where to stare. It is the reliable one, and the one that falls in the northern hemisphere's warmest nights — bright, fast, and often leaving persistent trains.",
+            "right_ascension": 48.2,
+            "declination": 58.1,
+            "objects": [
+                "109p-swift-tuttle"
+            ],
+            "window_start": "2026-07-18T00:54:19+02:00",
+            "window_end": "2026-08-24T14:33:30+02:00"
+        },
+        {
+            "id": "D011",
+            "api_id": "shower-draconids-2026-10-09",
+            "name": "Draconids at maximum",
+            "type": "shower",
+            "date": "2026-10-09",
+            "time": "03:21:56",
+            "description": "The Earth crosses the densest part of a dust trail left by 21P/Giacobini-Zinner, and the debris burns up at 20 km/s. Under a genuinely dark sky with the radiant overhead this is worth about 5 meteors an hour — a real sky and a real radiant altitude will give fewer, and a bright moon fewer still. Meteors appear all over the sky; they only trace back to Draco, which is where to point a camera and not where to stare. It is usually almost nothing, and about once a generation a storm of thousands an hour; the slowest meteors of any shower, and the only major one best watched in the evening rather than after midnight.",
+            "right_ascension": 262.1,
+            "declination": 54.0,
+            "objects": [
+                "21p-giacobini-zinner"
+            ],
+            "window_start": "2026-10-06T04:50:07+02:00",
+            "window_end": "2026-10-10T06:05:06+02:00"
+        },
+        {
+            "id": "D012",
+            "api_id": "shower-southern-taurids-2026-10-10",
+            "name": "Southern Taurids at maximum",
+            "type": "shower",
+            "date": "2026-10-10",
+            "time": "18:13:28",
+            "description": "The Earth crosses the densest part of a dust trail left by 2P/Encke, and the debris burns up at 27 km/s. Under a genuinely dark sky with the radiant overhead this is worth about 5 meteors an hour — a real sky and a real radiant altitude will give fewer, and a bright moon fewer still. Meteors appear all over the sky; they only trace back to Cetus, which is where to point a camera and not where to stare. It is ten weeks of activity at a handful an hour, made worth watching by the fireballs — slow, orange and bright enough to cast a shadow. The radiant drifts right across the sky over those weeks, from Cetus in September into Taurus in November, so the shower is named for where it ends up rather than where it is on any one night.",
+            "right_ascension": 32.0,
+            "declination": 9.0,
+            "objects": [
+                "2p-encke"
+            ],
+            "window_start": "2026-09-10T03:23:08+02:00",
+            "window_end": "2026-11-20T17:49:30+01:00"
+        },
+        {
+            "id": "D014",
+            "api_id": "shower-orionids-2026-10-21",
+            "name": "Orionids at maximum",
+            "type": "shower",
+            "date": "2026-10-21",
+            "time": "20:28:21",
+            "description": "The Earth crosses the densest part of a dust trail left by 1P/Halley, and the debris burns up at 66 km/s. Under a genuinely dark sky with the radiant overhead this is worth about 20 meteors an hour — a real sky and a real radiant altitude will give fewer, and a bright moon fewer still. Meteors appear all over the sky; they only trace back to Orion, which is where to point a camera and not where to stare. It is the other half of Halley's dust — the same comet as the η Aquariids, met at the other place its orbit crosses ours, and equally fast.",
+            "right_ascension": 95.2,
+            "declination": 15.8,
+            "objects": [
+                "1p-halley"
+            ],
+            "window_start": "2026-10-02T03:19:54+02:00",
+            "window_end": "2026-11-07T07:56:24+01:00"
+        },
+        {
+            "id": "D016",
+            "api_id": "shower-northern-taurids-2026-11-12",
+            "name": "Northern Taurids at maximum",
+            "type": "shower",
+            "date": "2026-11-12",
+            "time": "19:17:29",
+            "description": "The Earth crosses the densest part of a dust trail left by 2P/Encke, and the debris burns up at 29 km/s. Under a genuinely dark sky with the radiant overhead this is worth about 5 meteors an hour — a real sky and a real radiant altitude will give fewer, and a bright moon fewer still. Meteors appear all over the sky; they only trace back to Taurus, which is where to point a camera and not where to stare. It is the second branch of the same broad stream, overlapping the first for most of November and throwing the same slow fireballs.",
+            "right_ascension": 58.0,
+            "declination": 22.0,
+            "objects": [
+                "2p-encke"
+            ],
+            "window_start": "2026-10-20T08:15:06+02:00",
+            "window_end": "2026-12-10T11:41:27+01:00"
+        },
+        {
+            "id": "D018",
+            "api_id": "shower-leonids-2026-11-17",
+            "name": "Leonids at maximum",
+            "type": "shower",
+            "date": "2026-11-18",
+            "time": "00:52:00",
+            "description": "The Earth crosses the densest part of a dust trail left by 55P/Tempel-Tuttle, and the debris burns up at 71 km/s. Under a genuinely dark sky with the radiant overhead this is worth about 15 meteors an hour — a real sky and a real radiant altitude will give fewer, and a bright moon fewer still. Meteors appear all over the sky; they only trace back to Leo, which is where to point a camera and not where to stare. It is the fastest meteors that reach us, and the shower with the most spectacular history — every 33 years or so, when the parent comet has just been past, it has produced storms of tens of thousands an hour.",
+            "right_ascension": 152.0,
+            "declination": 22.0,
+            "objects": [
+                "55p-tempel-tuttle"
+            ],
+            "window_start": "2026-11-06T08:01:09+01:00",
+            "window_end": "2026-11-30T03:21:47+01:00"
+        }
+    ]
+}
