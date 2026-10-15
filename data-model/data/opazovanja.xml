@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='utf-8'?>
+<opazovanja>
+    <opazovanje id="O002">
+        <dogodekId>D002</dogodekId>
+        <lokacijaId>L002</lokacijaId>
+        <datum>2026-08-13</datum>
+        <cas>04:00</cas>
+        <casovniPas>Europe/Ljubljana</casovniPas>
+        <vrstaPodatkov>zgodovinski</vrstaPodatkov>
+        <vreme>
+            <vir>Open-Meteo Historical Weather API</vir>
+            <casVremenskegaPodatka>2026-08-13T04:00</casVremenskegaPodatka>
+            <oblacnost>2</oblacnost>
+            <padavine>0.0</padavine>
+            <hitrostVetra>2.0</hitrostVetra>
+            <sirinaVremenskeTocke>46.08084</sirinaVremenskeTocke>
+            <dolzinaVremenskeTocke>14.45151</dolzinaVremenskeTocke>
+        </vreme>
+    </opazovanje>
+    <opazovanje id="O003">
+        <dogodekId>D003</dogodekId>
+        <lokacijaId>L006</lokacijaId>
+        <datum>2026-08-15</datum>
+        <cas>20:00</cas>
+        <casovniPas>Europe/Ljubljana</casovniPas>
+        <vrstaPodatkov>zgodovinski</vrstaPodatkov>
+        <vreme>
+            <vir>Open-Meteo Historical Weather API</vir>
+            <casVremenskegaPodatka>2026-08-15T20:00</casVremenskegaPodatka>
+            <oblacnost>9</oblacnost>
+            <padavine>0.0</padavine>
+            <hitrostVetra>6.2</hitrostVetra>
+            <sirinaVremenskeTocke>46.08084</sirinaVremenskeTocke>
+            <dolzinaVremenskeTocke>14.45151</dolzinaVremenskeTocke>
+        </vreme>
+    </opazovanje>
+    <opazovanje id="O004">
+        <dogodekId>D004</dogodekId>
+        <lokacijaId>L011</lokacijaId>
+        <datum>2026-08-28</datum>
+        <cas>06:00</cas>
+        <casovniPas>Europe/Ljubljana</casovniPas>
+        <vrstaPodatkov>zgodovinski</vrstaPodatkov>
+        <vreme>
+            <vir>Open-Meteo Historical Weather API</vir>
+            <casVremenskegaPodatka>2026-08-28T06:00</casVremenskegaPodatka>
+            <oblacnost>3</oblacnost>
+            <padavine>0.0</padavine>
+            <hitrostVetra>3.9</hitrostVetra>
+            <sirinaVremenskeTocke>46.08084</sirinaVremenskeTocke>
+            <dolzinaVremenskeTocke>14.45151</dolzinaVremenskeTocke>
+        </vreme>
+    </opazovanje>
+    <opazovanje id="O005">
+        <dogodekId>D005</dogodekId>
+        <lokacijaId>L009</lokacijaId>
+        <datum>2026-09-08</datum>
+        <cas>21:00</cas>
+        <casovniPas>Europe/Ljubljana</casovniPas>
+        <vrstaPodatkov>zgodovinski</vrstaPodatkov>
+        <vreme>
+            <vir>Open-Meteo Historical Weather API</vir>
+            <casVremenskegaPodatka>2026-09-08T21:00</casVremenskegaPodatka>
+            <oblacnost>0</oblacnost>
+            <padavine>0.0</padavine>
+            <hitrostVetra>6.7</hitrostVetra>
+            <sirinaVremenskeTocke>46.08084</sirinaVremenskeTocke>
+            <dolzinaVremenskeTocke>14.45151</dolzinaVremenskeTocke>
+        </vreme>
+    </opazovanje>
+    <opazovanje id="O008">
+        <dogodekId>D008</dogodekId>
+        <lokacijaId>L006</lokacijaId>
+        <datum>2026-09-26</datum>
+        <cas>23:00</cas>
+        <casovniPas>Europe/Ljubljana</casovniPas>
+        <vrstaPodatkov>zgodovinski</vrstaPodatkov>
+        <vreme>
+            <vir>Open-Meteo Historical Weather API</vir>
+            <casVremenskegaPodatka>2026-09-26T23:00</casVremenskegaPodatka>
+            <oblacnost>0</oblacnost>
+            <padavine>0.0</padavine>
+            <hitrostVetra>0.4</hitrostVetra>
+            <sirinaVremenskeTocke>46.08084</sirinaVremenskeTocke>
+            <dolzinaVremenskeTocke>14.45151</dolzinaVremenskeTocke>
+        </vreme>
+    </opazovanje>
+    <opazovanje id="O009">
+        <dogodekId>D009</dogodekId>
+        <lokacijaId>L011</lokacijaId>
+        <datum>2026-10-04</datum>
+        <cas>22:00</cas>
+        <casovniPas>Europe/Ljubljana</casovniPas>
+        <vrstaPodatkov>zgodovinski</vrstaPodatkov>
+        <vreme>
+            <vir>Open-Meteo Historical Weather API</vir>
+            <casVremenskegaPodatka>2026-10-04T22:00</casVremenskegaPodatka>
+            <oblacnost>2</oblacnost>
+            <padavine>0.0</padavine>
+            <hitrostVetra>1.3</hitrostVetra>
+            <sirinaVremenskeTocke>46.08084</sirinaVremenskeTocke>
+            <dolzinaVremenskeTocke>14.45151</dolzinaVremenskeTocke>
+        </vreme>
+    </opazovanje>
+    <opazovanje id="O010">
+        <dogodekId>D010</dogodekId>
+        <lokacijaId>L009</lokacijaId>
+        <datum>2026-10-05</datum>
+        <cas>08:00</cas>
+        <casovniPas>Europe/Ljubljana</casovniPas>
+        <vrstaPodatkov>zgodovinski</vrstaPodatkov>
+        <vreme>
+            <vir>Open-Meteo Historical Weather API</vir>
+            <casVremenskegaPodatka>2026-10-05T08:00</casVremenskegaPodatka>
+            <oblacnost>100</oblacnost>
+            <padavine>0.0</padavine>
+            <hitrostVetra>2.1</hitrostVetra>
+            <sirinaVremenskeTocke>46.08084</sirinaVremenskeTocke>
+            <dolzinaVremenskeTocke>14.45151</dolzinaVremenskeTocke>
+        </vreme>
+    </opazovanje>
+    <opazovanje id="O011">
+        <dogodekId>D011</dogodekId>
+        <lokacijaId>L001</lokacijaId>
+        <datum>2026-10-09</datum>
+        <cas>03:00</cas>
+        <casovniPas>Europe/Ljubljana</casovniPas>
+        <vrstaPodatkov>zgodovinski</vrstaPodatkov>
+        <vreme>
+            <vir>Open-Meteo Historical Weather API</vir>
+            <casVremenskegaPodatka>2026-10-09T03:00</casVremenskegaPodatka>
+            <oblacnost>80</oblacnost>
+            <padavine>0.5</padavine>
+            <hitrostVetra>4.0</hitrostVetra>
+            <sirinaVremenskeTocke>46.08084</sirinaVremenskeTocke>
+            <dolzinaVremenskeTocke>14.45151</dolzinaVremenskeTocke>
+        </vreme>
+    </opazovanje>
+    <opazovanje id="O012">
+        <dogodekId>D012</dogodekId>
+        <lokacijaId>L002</lokacijaId>
+        <datum>2026-10-10</datum>
+        <cas>03:00</cas>
+        <casovniPas>Europe/Ljubljana</casovniPas>
+        <vrstaPodatkov>zgodovinski</vrstaPodatkov>
+        <vreme>
+            <vir>Open-Meteo Historical Weather API</vir>
+            <casVremenskegaPodatka>2026-10-10T03:00</casVremenskegaPodatka>
+            <oblacnost>99</oblacnost>
+            <padavine>0.0</padavine>
+            <hitrostVetra>0.6</hitrostVetra>
+            <sirinaVremenskeTocke>46.08084</sirinaVremenskeTocke>
+            <dolzinaVremenskeTocke>14.45151</dolzinaVremenskeTocke>
+        </vreme>
+    </opazovanje>
+    <opazovanje id="O013">
+        <dogodekId>D013</dogodekId>
+        <lokacijaId>L011</lokacijaId>
+        <datum>2026-10-18</datum>
+        <cas>20:00</cas>
+        <casovniPas>Europe/Ljubljana</casovniPas>
+        <vrstaPodatkov>napoved</vrstaPodatkov>
+        <vreme>
+            <vir>Open-Meteo Forecast API</vir>
+            <casVremenskegaPodatka>2026-10-18T20:00</casVremenskegaPodatka>
+            <oblacnost>72</oblacnost>
+            <padavine>0.0</padavine>
+            <hitrostVetra>3.0</hitrostVetra>
+            <vidljivost>32720.0</vidljivost>
+            <sirinaVremenskeTocke>46.052536</sirinaVremenskeTocke>
+            <dolzinaVremenskeTocke>14.513636</dolzinaVremenskeTocke>
+        </vreme>
+    </opazovanje>
+    <opazovanje id="O014">
+        <dogodekId>D014</dogodekId>
+        <lokacijaId>L010</lokacijaId>
+        <datum>2026-10-21</datum>
+        <cas>03:00</cas>
+        <casovniPas>Europe/Ljubljana</casovniPas>
+        <vrstaPodatkov>napoved</vrstaPodatkov>
+        <vreme>
+            <vir>Open-Meteo Forecast API</vir>
+            <casVremenskegaPodatka>2026-10-21T03:00</casVremenskegaPodatka>
+            <oblacnost>100</oblacnost>
+            <padavine>0.0</padavine>
+            <hitrostVetra>3.1</hitrostVetra>
+            <vidljivost>17680.0</vidljivost>
+            <sirinaVremenskeTocke>46.052536</sirinaVremenskeTocke>
+            <dolzinaVremenskeTocke>14.513636</dolzinaVremenskeTocke>
+        </vreme>
+    </opazovanje>
+    <opazovanje id="O015">
+        <dogodekId>D015</dogodekId>
+        <lokacijaId>L013</lokacijaId>
+        <datum>2026-10-26</datum>
+        <cas>05:00</cas>
+        <casovniPas>Europe/Ljubljana</casovniPas>
+        <vrstaPodatkov>ni_na_voljo</vrstaPodatkov>
+    </opazovanje>
+    <opazovanje id="O016">
+        <dogodekId>D016</dogodekId>
+        <lokacijaId>L014</lokacijaId>
+        <datum>2026-11-12</datum>
+        <cas>03:00</cas>
+        <casovniPas>Europe/Ljubljana</casovniPas>
+        <vrstaPodatkov>ni_na_voljo</vrstaPodatkov>
+    </opazovanje>
+    <opazovanje id="O017">
+        <dogodekId>D017</dogodekId>
+        <lokacijaId>L015</lokacijaId>
+        <datum>2026-11-16</datum>
+        <cas>21:00</cas>
+        <casovniPas>Europe/Ljubljana</casovniPas>
+        <vrstaPodatkov>ni_na_voljo</vrstaPodatkov>
+    </opazovanje>
+    <opazovanje id="O018">
+        <dogodekId>D018</dogodekId>
+        <lokacijaId>L023</lokacijaId>
+        <datum>2026-11-18</datum>
+        <cas>03:00</cas>
+        <casovniPas>Europe/Ljubljana</casovniPas>
+        <vrstaPodatkov>ni_na_voljo</vrstaPodatkov>
+    </opazovanje>
+    <opazovanje id="O019">
+        <dogodekId>D019</dogodekId>
+        <lokacijaId>L017</lokacijaId>
+        <datum>2026-11-21</datum>
+        <cas>06:00</cas>
+        <casovniPas>Europe/Ljubljana</casovniPas>
+        <vrstaPodatkov>ni_na_voljo</vrstaPodatkov>
+    </opazovanje>
+    <opazovanje id="O020">
+        <dogodekId>D020</dogodekId>
+        <lokacijaId>L025</lokacijaId>
+        <datum>2026-11-25</datum>
+        <cas>23:00</cas>
+        <casovniPas>Europe/Ljubljana</casovniPas>
+        <vrstaPodatkov>ni_na_voljo</vrstaPodatkov>
+    </opazovanje>
+</opazovanja>
