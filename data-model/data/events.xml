@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='utf-8'?>
+<events source="SpaceCatalog.org" timezone="Europe/Ljubljana">
+    <event id="D002">
+        <api_id>shower-perseids-2026-08-13</api_id>
+        <name>Perseids at maximum</name>
+        <type>shower</type>
+        <date>2026-08-13</date>
+        <time>04:09:26</time>
+        <description>The Earth crosses the densest part of a dust trail left by 109P/Swift-Tuttle, and the debris burns up at 59 km/s. Under a genuinely dark sky with the radiant overhead this is worth about 100 meteors an hour — a real sky and a real radiant altitude will give fewer, and a bright moon fewer still. Meteors appear all over the sky; they only trace back to Perseus, which is where to point a camera and not where to stare. It is the reliable one, and the one that falls in the northern hemisphere's warmest nights — bright, fast, and often leaving persistent trains.</description>
+        <objects>
+            <object>109p-swift-tuttle</object>
+        </objects>
+        <right_ascension>48.2</right_ascension>
+        <declination>58.1</declination>
+        <window_start>2026-07-18T00:54:19+02:00</window_start>
+        <window_end>2026-08-24T14:33:30+02:00</window_end>
+    </event>
+    <event id="D003">
+        <api_id>elongation-venus-2026-08-15</api_id>
+        <name>Venus at its furthest from the Sun (evening sky)</name>
+        <type>elongation</type>
+        <date>2026-08-15</date>
+        <time>08:23:03</time>
+        <description>Venus stands 46° away from the Sun in our sky today, the widest that gap opens on this pass. Look west just after sunset: this is the easiest Venus gets to find.</description>
+        <objects>
+            <object>venus</object>
+        </objects>
+        <right_ascension>186.75976729960198</right_ascension>
+        <declination>-4.450375001107547</declination>
+    </event>
+    <event id="D004">
+        <api_id>eclipse-lunar-2026-08-28</api_id>
+        <name>Partial lunar eclipse</name>
+        <type>eclipse</type>
+        <date>2026-08-28</date>
+        <time>06:12:49</time>
+        <description>Earth's shadow crosses 97% of the Moon's disc at the deepest point, over about 199 minutes — a clean curved bite out of a full moon, obvious to the naked eye and to a phone camera. Visible from wherever the Moon is above the horizon at the time.</description>
+        <objects>
+            <object>moon</object>
+            <object>earth</object>
+        </objects>
+        <right_ascension>336.1720296979799</right_ascension>
+        <declination>-9.436827699649085</declination>
+    </event>
+    <event id="D005">
+        <api_id>conjunction-moon-jupiter-2026-09-08</api_id>
+        <name>The Moon 46′ from Jupiter</name>
+        <type>conjunction</type>
+        <date>2026-09-08</date>
+        <time>20:43:54</time>
+        <description>The Moon passes 46′ from Jupiter — close enough that a thumb held at arm's length covers both at once, and a pair of binoculars holds them in one field. Look before dawn; the Moon moves its own width every hour, so the gap looks noticeably different either side of tonight.</description>
+        <objects>
+            <object>moon</object>
+            <object>jupiter</object>
+        </objects>
+        <right_ascension>137.8754180134704</right_ascension>
+        <declination>17.588922044697522</declination>
+    </event>
+    <event id="D008">
+        <api_id>opposition-neptune-2026-09-26</api_id>
+        <name>Neptune at opposition</name>
+        <type>opposition</type>
+        <date>2026-09-26</date>
+        <time>03:26:55</time>
+        <description>Neptune is directly opposite the Sun from here, so it rises as the Sun sets, stands highest at midnight and sets at sunrise. It is also about as close to Earth as it gets this time round, which makes this its brightest and biggest night of the year — the one to point a telescope at it.</description>
+        <objects>
+            <object>neptune</object>
+        </objects>
+        <right_ascension>2.9732204795629196</right_ascension>
+        <declination>-0.2564408314661104</declination>
+    </event>
+    <event id="D009">
+        <api_id>opposition-saturn-2026-10-04</api_id>
+        <name>Saturn at opposition</name>
+        <type>opposition</type>
+        <date>2026-10-04</date>
+        <time>14:12:54</time>
+        <description>Saturn is directly opposite the Sun from here, so it rises as the Sun sets, stands highest at midnight and sets at sunrise. It is also about as close to Earth as it gets this time round, which makes this its brightest and biggest night of the year — the one to point a telescope at it.</description>
+        <objects>
+            <object>saturn</object>
+        </objects>
+        <right_ascension>11.104639232604681</right_ascension>
+        <declination>1.8254183784230693</declination>
+    </event>
+    <event id="D010">
+        <api_id>conjunction-moon-mars-2026-10-05</api_id>
+        <name>The Moon 1.1° from Mars</name>
+        <type>conjunction</type>
+        <date>2026-10-05</date>
+        <time>08:11:32</time>
+        <description>The Moon passes 1.1° from Mars — close enough that a thumb held at arm's length covers both at once, and a pair of binoculars holds them in one field. Look before dawn; the Moon moves its own width every hour, so the gap looks noticeably different either side of tonight.</description>
+        <objects>
+            <object>moon</object>
+            <object>mars</object>
+        </objects>
+        <right_ascension>126.73659643573006</right_ascension>
+        <declination>21.396050810859368</declination>
+    </event>
+    <event id="D011">
+        <api_id>shower-draconids-2026-10-09</api_id>
+        <name>Draconids at maximum</name>
+        <type>shower</type>
+        <date>2026-10-09</date>
+        <time>03:21:56</time>
+        <description>The Earth crosses the densest part of a dust trail left by 21P/Giacobini-Zinner, and the debris burns up at 20 km/s. Under a genuinely dark sky with the radiant overhead this is worth about 5 meteors an hour — a real sky and a real radiant altitude will give fewer, and a bright moon fewer still. Meteors appear all over the sky; they only trace back to Draco, which is where to point a camera and not where to stare. It is usually almost nothing, and about once a generation a storm of thousands an hour; the slowest meteors of any shower, and the only major one best watched in the evening rather than after midnight.</description>
+        <objects>
+            <object>21p-giacobini-zinner</object>
+        </objects>
+        <right_ascension>262.1</right_ascension>
+        <declination>54</declination>
+        <window_start>2026-10-06T04:50:07+02:00</window_start>
+        <window_end>2026-10-10T06:05:06+02:00</window_end>
+    </event>
+    <event id="D012">
+        <api_id>shower-southern-taurids-2026-10-10</api_id>
+        <name>Southern Taurids at maximum</name>
+        <type>shower</type>
+        <date>2026-10-10</date>
+        <time>18:13:28</time>
+        <description>The Earth crosses the densest part of a dust trail left by 2P/Encke, and the debris burns up at 27 km/s. Under a genuinely dark sky with the radiant overhead this is worth about 5 meteors an hour — a real sky and a real radiant altitude will give fewer, and a bright moon fewer still. Meteors appear all over the sky; they only trace back to Cetus, which is where to point a camera and not where to stare. It is ten weeks of activity at a handful an hour, made worth watching by the fireballs — slow, orange and bright enough to cast a shadow. The radiant drifts right across the sky over those weeks, from Cetus in September into Taurus in November, so the shower is named for where it ends up rather than where it is on any one night.</description>
+        <objects>
+            <object>2p-encke</object>
+        </objects>
+        <right_ascension>32</right_ascension>
+        <declination>9</declination>
+        <window_start>2026-09-10T03:23:08+02:00</window_start>
+        <window_end>2026-11-20T17:49:30+01:00</window_end>
+    </event>
+    <event id="D013">
+        <api_id>moon-q1-2026-10-18</api_id>
+        <name>First quarter</name>
+        <type>moon</type>
+        <date>2026-10-18</date>
+        <time>18:13:19</time>
+        <description>Half the disc is lit and the Moon sits high in the evening, with the sunrise line running down its middle — the shadows along that line are long, which is when its craters look their most three-dimensional in any telescope.</description>
+        <objects>
+            <object>moon</object>
+        </objects>
+        <right_ascension>297.41302468863745</right_ascension>
+        <declination>-23.861187928840017</declination>
+    </event>
+    <event id="D014">
+        <api_id>shower-orionids-2026-10-21</api_id>
+        <name>Orionids at maximum</name>
+        <type>shower</type>
+        <date>2026-10-21</date>
+        <time>20:28:21</time>
+        <description>The Earth crosses the densest part of a dust trail left by 1P/Halley, and the debris burns up at 66 km/s. Under a genuinely dark sky with the radiant overhead this is worth about 20 meteors an hour — a real sky and a real radiant altitude will give fewer, and a bright moon fewer still. Meteors appear all over the sky; they only trace back to Orion, which is where to point a camera and not where to stare. It is the other half of Halley's dust — the same comet as the η Aquariids, met at the other place its orbit crosses ours, and equally fast.</description>
+        <objects>
+            <object>1p-halley</object>
+        </objects>
+        <right_ascension>95.2</right_ascension>
+        <declination>15.8</declination>
+        <window_start>2026-10-02T03:19:54+02:00</window_start>
+        <window_end>2026-11-07T07:56:24+01:00</window_end>
+    </event>
+    <event id="D015">
+        <api_id>moon-q2-2026-10-26</api_id>
+        <name>Full moon</name>
+        <type>moon</type>
+        <date>2026-10-26</date>
+        <time>05:12:15</time>
+        <description>The Moon rises as the Sun sets and is up all night, fully lit. It is the best night of the month to look at the Moon and the worst to look at anything faint, because its light scatters through the whole sky.</description>
+        <objects>
+            <object>moon</object>
+        </objects>
+        <right_ascension>28.561779443317583</right_ascension>
+        <declination>16.594790361439504</declination>
+    </event>
+    <event id="D016">
+        <api_id>shower-northern-taurids-2026-11-12</api_id>
+        <name>Northern Taurids at maximum</name>
+        <type>shower</type>
+        <date>2026-11-12</date>
+        <time>19:17:29</time>
+        <description>The Earth crosses the densest part of a dust trail left by 2P/Encke, and the debris burns up at 29 km/s. Under a genuinely dark sky with the radiant overhead this is worth about 5 meteors an hour — a real sky and a real radiant altitude will give fewer, and a bright moon fewer still. Meteors appear all over the sky; they only trace back to Taurus, which is where to point a camera and not where to stare. It is the second branch of the same broad stream, overlapping the first for most of November and throwing the same slow fireballs.</description>
+        <objects>
+            <object>2p-encke</object>
+        </objects>
+        <right_ascension>58</right_ascension>
+        <declination>22</declination>
+        <window_start>2026-10-20T08:15:06+02:00</window_start>
+        <window_end>2026-12-10T11:41:27+01:00</window_end>
+    </event>
+    <event id="D017">
+        <api_id>conjunction-mars-jupiter-2026-11-16</api_id>
+        <name>Mars and Jupiter 1.2° apart</name>
+        <type>conjunction</type>
+        <date>2026-11-16</date>
+        <time>03:03:17</time>
+        <description>Mars and Jupiter come within 1.2° of each other, close enough to take in with one glance and to frame together in binoculars. They are 88° from the Sun, so look east before sunrise.</description>
+        <objects>
+            <object>mars</object>
+            <object>jupiter</object>
+        </objects>
+        <right_ascension>148.3712284888102</right_ascension>
+        <declination>14.864459993004676</declination>
+    </event>
+    <event id="D018">
+        <api_id>shower-leonids-2026-11-17</api_id>
+        <name>Leonids at maximum</name>
+        <type>shower</type>
+        <date>2026-11-18</date>
+        <time>00:52:00</time>
+        <description>The Earth crosses the densest part of a dust trail left by 55P/Tempel-Tuttle, and the debris burns up at 71 km/s. Under a genuinely dark sky with the radiant overhead this is worth about 15 meteors an hour — a real sky and a real radiant altitude will give fewer, and a bright moon fewer still. Meteors appear all over the sky; they only trace back to Leo, which is where to point a camera and not where to stare. It is the fastest meteors that reach us, and the shower with the most spectacular history — every 33 years or so, when the parent comet has just been past, it has produced storms of tens of thousands an hour.</description>
+        <objects>
+            <object>55p-tempel-tuttle</object>
+        </objects>
+        <right_ascension>152</right_ascension>
+        <declination>22</declination>
+        <window_start>2026-11-06T08:01:09+01:00</window_start>
+        <window_end>2026-11-30T03:21:47+01:00</window_end>
+    </event>
+    <event id="D019">
+        <api_id>elongation-mercury-2026-11-20</api_id>
+        <name>Mercury at its furthest from the Sun (morning sky)</name>
+        <type>elongation</type>
+        <date>2026-11-21</date>
+        <time>00:35:39</time>
+        <description>Mercury stands 20° away from the Sun in our sky today, the widest that gap opens on this pass. Look east shortly before sunrise: this is the easiest Mercury gets to find, and Mercury is hard to catch at any other time.</description>
+        <objects>
+            <object>mercury</object>
+        </objects>
+        <right_ascension>217.19154373766514</right_ascension>
+        <declination>-12.186974960690364</declination>
+    </event>
+    <event id="D020">
+        <api_id>opposition-uranus-2026-11-25</api_id>
+        <name>Uranus at opposition</name>
+        <type>opposition</type>
+        <date>2026-11-25</date>
+        <time>23:27:02</time>
+        <description>Uranus is directly opposite the Sun from here, so it rises as the Sun sets, stands highest at midnight and sets at sunrise. It is also about as close to Earth as it gets this time round, which makes this its brightest and biggest night of the year — the one to point a telescope at it.</description>
+        <objects>
+            <object>uranus</object>
+        </objects>
+        <right_ascension>61.29714434158767</right_ascension>
+        <declination>20.668280578864714</declination>
+    </event>
+</events>

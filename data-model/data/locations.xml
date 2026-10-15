@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<locations source="openpoiservice / OpenStreetMap">
+    <location id="L001">
+        <osm_id>46849587</osm_id>
+        <osm_type>1</osm_type>
+        <name>Drenikov vrh</name>
+        <category>peak</category>
+        <latitude>46.058716</latitude>
+        <longitude>14.482873</longitude>
+    </location>
+    <location id="L002">
+        <osm_id>2504896098</osm_id>
+        <osm_type>1</osm_type>
+        <name>Šišenski hrib</name>
+        <category>peak</category>
+        <latitude>46.060370</latitude>
+        <longitude>14.488441</longitude>
+    </location>
+    <location id="L003">
+        <osm_id>2754952507</osm_id>
+        <osm_type>1</osm_type>
+        <category>viewpoint</category>
+        <latitude>46.048544</latitude>
+        <longitude>14.507924</longitude>
+    </location>
+    <location id="L004">
+        <osm_id>2754952535</osm_id>
+        <osm_type>1</osm_type>
+        <category>viewpoint</category>
+        <latitude>46.049252</latitude>
+        <longitude>14.508739</longitude>
+    </location>
+    <location id="L005">
+        <osm_id>6910387185</osm_id>
+        <osm_type>1</osm_type>
+        <category>viewpoint</category>
+        <latitude>46.049911</latitude>
+        <longitude>14.503698</longitude>
+    </location>
+    <location id="L006">
+        <osm_id>7181884601</osm_id>
+        <osm_type>1</osm_type>
+        <name>Tivolski vrh</name>
+        <category>peak</category>
+        <latitude>46.056141</latitude>
+        <longitude>14.490002</longitude>
+    </location>
+    <location id="L007">
+        <osm_id>7338834628</osm_id>
+        <osm_type>1</osm_type>
+        <category>viewpoint</category>
+        <latitude>46.041374</latitude>
+        <longitude>14.513383</longitude>
+    </location>
+    <location id="L008">
+        <osm_id>8240415927</osm_id>
+        <osm_type>1</osm_type>
+        <category>viewpoint</category>
+        <latitude>46.047518</latitude>
+        <longitude>14.505587</longitude>
+    </location>
+    <location id="L009">
+        <osm_id>9405267306</osm_id>
+        <osm_type>1</osm_type>
+        <name>Orlov vrh</name>
+        <category>peak</category>
+        <latitude>46.044692</latitude>
+        <longitude>14.513662</longitude>
+    </location>
+    <location id="L010">
+        <osm_id>10197939394</osm_id>
+        <osm_type>1</osm_type>
+        <name>Šance</name>
+        <category>peak</category>
+        <latitude>46.046310</latitude>
+        <longitude>14.511141</longitude>
+    </location>
+    <location id="L011">
+        <osm_id>12638536361</osm_id>
+        <osm_type>1</osm_type>
+        <name>Grajska planota</name>
+        <category>peak</category>
+        <latitude>46.047930</latitude>
+        <longitude>14.509277</longitude>
+    </location>
+    <location id="L012">
+        <osm_id>13704067801</osm_id>
+        <osm_type>1</osm_type>
+        <category>viewpoint</category>
+        <latitude>46.050298</latitude>
+        <longitude>14.505275</longitude>
+    </location>
+    <location id="L013">
+        <osm_id>171105581</osm_id>
+        <osm_type>1</osm_type>
+        <name>Šmarna gora</name>
+        <category>peak</category>
+        <latitude>46.129834</latitude>
+        <longitude>14.463945</longitude>
+    </location>
+    <location id="L014">
+        <osm_id>1330277037</osm_id>
+        <osm_type>1</osm_type>
+        <name>Grmada</name>
+        <category>peak</category>
+        <latitude>46.128034</latitude>
+        <longitude>14.455044</longitude>
+    </location>
+    <location id="L015">
+        <osm_id>3979482120</osm_id>
+        <osm_type>1</osm_type>
+        <category>viewpoint</category>
+        <latitude>46.128017</latitude>
+        <longitude>14.455015</longitude>
+    </location>
+    <location id="L016">
+        <osm_id>3979482121</osm_id>
+        <osm_type>1</osm_type>
+        <category>viewpoint</category>
+        <latitude>46.128171</latitude>
+        <longitude>14.454608</longitude>
+    </location>
+    <location id="L017">
+        <osm_id>4900604100</osm_id>
+        <osm_type>1</osm_type>
+        <name>Gradišče</name>
+        <category>peak</category>
+        <latitude>46.135385</latitude>
+        <longitude>14.454006</longitude>
+    </location>
+    <location id="L018">
+        <osm_id>4919192316</osm_id>
+        <osm_type>1</osm_type>
+        <category>viewpoint</category>
+        <latitude>46.128423</latitude>
+        <longitude>14.449409</longitude>
+    </location>
+    <location id="L019">
+        <osm_id>4919192317</osm_id>
+        <osm_type>1</osm_type>
+        <category>viewpoint</category>
+        <latitude>46.126080</latitude>
+        <longitude>14.452983</longitude>
+    </location>
+    <location id="L020">
+        <osm_id>5066235545</osm_id>
+        <osm_type>1</osm_type>
+        <category>viewpoint</category>
+        <latitude>46.129542</latitude>
+        <longitude>14.464024</longitude>
+    </location>
+    <location id="L021">
+        <osm_id>6409702875</osm_id>
+        <osm_type>1</osm_type>
+        <name>Debeli hrib</name>
+        <category>peak</category>
+        <latitude>46.133932</latitude>
+        <longitude>14.470882</longitude>
+    </location>
+    <location id="L022">
+        <osm_id>6418590501</osm_id>
+        <osm_type>1</osm_type>
+        <category>peak</category>
+        <latitude>46.136399</latitude>
+        <longitude>14.470824</longitude>
+    </location>
+    <location id="L023">
+        <osm_id>6873257185</osm_id>
+        <osm_type>1</osm_type>
+        <name>Šmarna gora</name>
+        <category>viewpoint</category>
+        <latitude>46.129614</latitude>
+        <longitude>14.464081</longitude>
+    </location>
+    <location id="L024">
+        <osm_id>10633049159</osm_id>
+        <osm_type>1</osm_type>
+        <category>viewpoint</category>
+        <latitude>46.116704</latitude>
+        <longitude>14.460641</longitude>
+    </location>
+    <location id="L025">
+        <osm_id>10815389192</osm_id>
+        <osm_type>1</osm_type>
+        <name>Kudrovski vrh</name>
+        <category>peak</category>
+        <latitude>46.130347</latitude>
+        <longitude>14.470341</longitude>
+    </location>
+    <location id="L026">
+        <osm_id>12991396928</osm_id>
+        <osm_type>1</osm_type>
+        <category>viewpoint</category>
+        <latitude>46.127576</latitude>
+        <longitude>14.448655</longitude>
+    </location>
+</locations>
