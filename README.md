@@ -36,7 +36,3 @@ Collects astronomy-related news from NASA through web scraping, validation, and 
 Analyzes official Slovenian tourism statistics using dynamically retrieved PC-Axis data. Provides interactive charts, municipality comparisons, and tourism trends to support astronomy trip planning.
 
 [View AstroDestination README](astro-destination/README.md)
-
-## Development
-
-Each module is developed and tested independently to support maintainability, reusability, and future integration into the main SkyWatch application.
