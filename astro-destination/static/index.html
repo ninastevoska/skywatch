@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F6F7FA">
+  <meta name="description" content="Explore tourism trends across Slovenian destinations with SkyWatch.">
+  <title>AstroDestination Explorer | SkyWatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+  <script defer src="/static/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="SkyWatch home">
+        <span class="brand-icon" aria-hidden="true">✦</span>
+        <span>Sky<span class="brand-highlight">Watch</span><small>ASTRODESTINATION EXPLORER</small></span>
+      </a>
+      <div class="sidebar-group-label">EXPLORE</div>
+      <nav aria-label="Dashboard navigation">
+        <a class="nav-link active" href="#overview" data-section="overview" aria-current="location"><span aria-hidden="true">◈</span> Overview</a>
+        <a class="nav-link" href="#seasonality" data-section="seasonality"><span aria-hidden="true">▥</span> Seasonality</a>
+        <a class="nav-link" href="#comparison" data-section="comparison"><span aria-hidden="true">⇄</span> Compare destinations</a>
+        <a class="nav-link" href="#trends" data-section="trends"><span aria-hidden="true">⌁</span> Yearly trends</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="source-box"><span class="source-dot"></span><div><strong>Official statistics</strong><span>SURS · PC-Axis / OPSI</span></div></div>
+        <a href="https://podatki.gov.si/dataset/surs2164466s" target="_blank" rel="noopener noreferrer" class="source-link">View original dataset ↗</a>
+        <span class="sidebar-footnote">Part of the SkyWatch project</span>
+      </div>
+    </aside>
+
+    <main class="main" id="overview">
+      <header class="topbar"><span class="breadcrumb">SKYWATCH <span>/</span> ASTRODESTINATION EXPLORER</span><span class="data-indicator"><i></i> SURS data · loaded on startup</span></header>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-content">
+          <span class="eyebrow"><span aria-hidden="true">✧</span> DESTINATION INSIGHTS</span>
+          <h1 id="page-title">Explore your next destination.</h1>
+          <p>Explore tourism patterns across Slovenia before planning your next astronomical getaway. Understand when places are busy, compare municipalities, and discover seasonal trends.</p>
+          <span class="hero-note">Tourism data for better-informed trip planning</span>
+        </div>
+        
+      </section>
+
+      <section class="filters-panel" aria-label="Data filters">
+        <div class="filter-heading"><div><span class="eyebrow small">FILTERS</span><h2>Choose a destination</h2></div><span class="filter-help">Statistics update automatically</span></div>
+        <div class="filter-controls">
+          <label class="field"><span>Primary municipality</span><select id="municipality" disabled><option>Loading municipalities...</option></select></label>
+          <label class="field year-field"><span>Reference year</span><select id="year" disabled><option>Loading years...</option></select></label>
+        </div>
+      </section>
+
+      <div id="status" class="status" role="status" aria-live="polite">Connecting to official tourism data...</div>
+      <section class="summary-grid" aria-label="Key tourism statistics">
+        <article class="metric-card"><span class="metric-label">OVERNIGHT STAYS <span aria-hidden="true">◈</span></span><strong id="total-stays">—</strong><span id="total-caption" class="metric-detail">Selected year</span></article>
+        <article class="metric-card"><span class="metric-label">BUSIEST MONTH <span aria-hidden="true">↗</span></span><strong id="busiest-month">—</strong><span id="busiest-caption" class="metric-detail">Highest overnight stays</span></article>
+        <article class="metric-card"><span class="metric-label">QUIETEST MONTH <span aria-hidden="true">☾</span></span><strong id="quietest-month">—</strong><span id="quietest-caption" class="metric-detail">Lowest overnight stays</span></article>
+        <article class="metric-card"><span class="metric-label">DATA COVERAGE <span aria-hidden="true">◎</span></span><strong id="coverage">—</strong><span id="coverage-caption" class="metric-detail">Months available</span></article>
+      </section>
+
+      <section class="chart-panel" id="seasonality" aria-labelledby="monthly-title">
+        <div class="panel-heading"><div><span class="eyebrow small">01 / SEASONALITY</span><h2 id="monthly-title">Overnight stays by month</h2><p id="monthly-subtitle">See how tourism changes across the year.</p></div><span class="chart-tag">MONTHLY DATA</span></div>
+        <div class="chart-area"><canvas id="monthly-chart" role="img" aria-label="Monthly overnight stays bar chart"></canvas></div>
+        <p class="panel-footnote">Missing months are not counted as zero. Statistics represent the municipality, not an individual observing spot.</p>
+      </section>
+
+      <section class="bottom-grid">
+        <article class="chart-panel" id="comparison" aria-labelledby="comparison-title">
+          <div class="panel-heading"><div><span class="eyebrow small">02 / COMPARISON</span><h2 id="comparison-title">Compare destinations</h2><p id="comparison-subtitle">Compare monthly stays in two municipalities.</p></div></div>
+          <div class="comparison-controls">
+            <label class="field" for="comparison-municipality">
+              <span>Compare with</span>
+              <select id="comparison-municipality" disabled><option>Loading municipalities...</option></select>
+            </label>
+          </div>
+          <div class="chart-area smaller"><canvas id="comparison-chart" role="img" aria-label="Municipality comparison line chart"></canvas></div>
+        </article>
+        <article class="chart-panel" id="trends" aria-labelledby="trends-title">
+          <div class="panel-heading"><div><span class="eyebrow small">03 / LONG-TERM VIEW</span><h2 id="trends-title">Yearly trends</h2><p id="trends-subtitle">Annual overnight stays, with partial years marked.</p></div></div>
+          <div class="chart-area smaller"><canvas id="trends-chart" role="img" aria-label="Annual overnight stays bar chart"></canvas></div>
+        </article>
+      </section>
+      <footer class="footer"><span>© SkyWatch · AstroDestination Explorer</span><span>Data: SURS / OPSI · <a href="https://podatki.gov.si/dataset/surs2164466s" target="_blank" rel="noopener noreferrer">CC BY 4.0 ↗</a></span></footer>
+    </main>
+  </div>
+</body>
+</html>
