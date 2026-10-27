@@ -1,39 +1,63 @@
 # AstroDestination Explorer
 
-AstroDestination Explorer is a standalone application developed as part of the **SkyWatch** project. It provides tourism statistics for Slovenian municipalities to support the planning of astronomy-related trips.
+AstroDestination Explorer is a standalone module of the **SkyWatch** project that helps users explore tourism activity in Slovenian municipalities when planning astronomy-related trips.
 
-The application retrieves open tourism data in PC-Axis format, processes the data, and presents the results through dynamic charts and statistical summaries.
+The application dynamically retrieves official tourism statistics in PC-Axis format, processes them, and presents the results through interactive charts. It is designed for future integration into SkyWatch as an **About Destination** section.
 
-The module is designed for future integration into SkyWatch as an **"About Destination"** section.
+## Features
 
-## Planned Features
+- **Monthly overnight stays:** View monthly tourism activity for a selected municipality and year.
+- **Destination comparison:** Compare monthly overnight stays between two municipalities.
+- **Busiest and quietest months:** Identify months with the highest and lowest overnight stays.
+- **Yearly trends:** Explore tourism trends across available years, including incomplete-year indicators.
 
-- **Monthly overnight stays:** Display the number of tourist overnight stays by month for a selected municipality and year.
-- **Municipality comparison:** Compare tourism statistics between two Slovenian municipalities.
-- **Most and least visited months:** Identify the months with the highest and lowest numbers of tourist overnight stays.
-- **Tourism trends:** Visualize changes in tourism activity across the available years.
+## Technologies
+
+- **Backend:** Python, FastAPI, Pandas, Pyaxis
+- **Frontend:** HTML, CSS, JavaScript, Chart.js
+- **Testing:** unittest, FastAPI TestClient
 
 ## Data Source
 
-The application uses publicly available tourism statistics published by the **Statistical Office of the Republic of Slovenia (SURS)** through the Slovenian Open Data Portal (OPSI).
+Tourism statistics are provided by the **Statistical Office of the Republic of Slovenia (SURS)** through the Slovenian Open Data Portal (OPSI).
 
-**Dataset:** Tourist arrivals and overnight stays by country of origin and municipality, Slovenia, monthly.
-
-- **Dataset page:** https://podatki.gov.si/dataset/surs2164466s
-- **Dataset resource:** https://podatki.gov.si/dataset/surs2164466s/resource/be163064-b1fd-4090-9bd1-72a4c6d1461b
-- **PC-Axis file:** https://pxweb.stat.si/SiStatData/Resources/PX/Databases/Data/2164466S.PX
+- **Dataset:** [Tourist arrivals and overnight stays by municipality](https://podatki.gov.si/dataset/surs2164466s)
+- **PC-Axis source:** [2164466S.PX](https://pxweb.stat.si/SiStatData/Resources/PX/Databases/Data/2164466S.PX)
 - **Format:** PC-Axis (.PX)
-- **Provider:** Statistical Office of the Republic of Slovenia (SURS)
 - **License:** Creative Commons Attribution 4.0 (CC BY 4.0)
 
-The application is intended to retrieve the PC-Axis data dynamically from the online source when loaded, rather than relying on a manually downloaded dataset.
+Data is retrieved automatically when the backend starts. Statistics are based on tourist overnight stays across all countries of origin. Missing months are not treated as zero.
+
+## Installation and Usage
+
+Requires Python 3.10+ and an internet connection for the initial data download.
+
+From the `astro-destination` directory:
+
+```bash
+python -m pip install -r requirements.txt
+python -m uvicorn main:app --reload
+```
+
+Open **http://127.0.0.1:8000/** to use the dashboard.
+
+API documentation is available at **http://127.0.0.1:8000/docs**.
+
+## Testing
+
+Run the automated tests with:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+The test suite contains **36 tests** covering data retrieval, parsing, statistical calculations, and API endpoints.
 
 ## Project Structure
 
 ```text
 astro-destination/
 ├── src/
-│   ├── __init__.py
 │   ├── px_fetcher.py
 │   ├── px_parser.py
 │   └── tourism_service.py
@@ -42,20 +66,11 @@ astro-destination/
 │   ├── app.js
 │   └── styles.css
 ├── tests/
-│   └── __init__.py
+│   ├── test_px_fetcher.py
+│   ├── test_px_parser.py
+│   ├── test_tourism_service.py
+│   └── test_api.py
 ├── main.py
 ├── requirements.txt
 └── README.md
 ```
-
-### Components
-
-- **`src/px_fetcher.py`** – Retrieves PC-Axis data from the online source.
-- **`src/px_parser.py`** – Parses PC-Axis files into structured data.
-- **`src/tourism_service.py`** – Handles filtering, aggregation, comparisons, and statistical calculations.
-- **`static/index.html`** – Defines the web interface.
-- **`static/app.js`** – Handles user interactions and dynamic chart updates.
-- **`static/styles.css`** – Defines the application styling.
-- **`tests/`** – Contains automated tests.
-- **`main.py`** – Application entry point.
-- **`requirements.txt`** – Python dependencies.

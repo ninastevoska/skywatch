@@ -1,20 +1,42 @@
 # SkyWatch
 
-SkyWatch is an astronomy-focused project that aims to integrate astronomical events, observation locations, and weather data to help users plan sky observations. The project also includes a web parser for collecting astronomy-related news from NASA.
+SkyWatch is an astronomy-focused project designed to help users plan sky observations by integrating astronomical events, observation locations, weather information, and destination insights.
+
+The project is developed through independent, reusable modules that can later be integrated into a unified application.
 
 ## Project Structure
 
 ```text
 skywatch/
-├── backend/
-├── data-model/     # XML and JSON data processing
-├── docs/
-├── frontend/
-├── parser/         # NASA astronomy news scraper
+├── astro-destination/  # Tourism statistics and destination insights
+├── backend/            
+├── data-model/         # XML and JSON data processing
+├── docs/               
+├── frontend/           
+├── parser/             # NASA astronomy news scraper
 └── README.md
 ```
 
-## Documentation
+## Modules
 
-- [Data Model](data-model/README.md) – XML and JSON data processing.
-- [News Parser](parser/README.md) – Web scraping, validation, and JSON export of NASA astronomy news.
+### Data Model
+
+Processes and manages structured astronomical data using XML and JSON.
+
+[View Data Model README](data-model/README.md)
+
+### News Parser
+
+Collects astronomy-related news from NASA through web scraping, validation, and JSON export.
+
+[View Parser README](parser/README.md)
+
+### AstroDestination Explorer
+
+Analyzes official Slovenian tourism statistics using dynamically retrieved PC-Axis data. Provides interactive charts, municipality comparisons, and tourism trends to support astronomy trip planning.
+
+[View AstroDestination README](astro-destination/README.md)
+
+## Development
+
+Each module is developed and tested independently to support maintainability, reusability, and future integration into the main SkyWatch application.
