@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkyWatch AI | Astronomical Observation Planner</title>
+
+    <meta
+        name="description"
+        content="Discover upcoming astronomical events and plan your observations with AI-powered recommendations."
+    >
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+
+        <header class="site-header">
+            <div class="brand">
+                <span class="brand-icon" aria-hidden="true">✦</span>
+                <div>
+                    <h1>SkyWatch <span>AI</span></h1>
+                    <p>Astronomical Observation Planner</p>
+                </div>
+            </div>
+
+            <div class="header-status">
+                <span class="status-indicator"></span>
+                <span>Powered by SpaceCatalog &amp; AI</span>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="hero-section">
+                <div class="hero-content">
+                    <span class="eyebrow">EXPLORE THE UNIVERSE</span>
+
+                    <h2>
+                        Your next astronomical
+                        adventure starts here.
+                    </h2>
+
+                    <p>
+                        Discover celestial events, explore their science,
+                        and get personalized AI guidance for observing
+                        the night sky.
+                    </p>
+                </div>
+            </section>
+
+            <section
+                class="events-section"
+                aria-labelledby="events-heading"
+            >
+                <div class="section-heading">
+                    <div>
+                        <span class="section-label">DISCOVER</span>
+                        <h2 id="events-heading">Upcoming Events</h2>
+                        <p>
+                            Explore astronomical events and select one
+                            to create your observation experience.
+                        </p>
+                    </div>
+                </div>
+
+                <form id="date-filter-form" class="filter-bar">
+                    <div class="form-group">
+                        <label for="from-date">From</label>
+                        <input
+                            type="date"
+                            id="from-date"
+                            name="from_date"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="to-date">To</label>
+                        <input
+                            type="date"
+                            id="to-date"
+                            name="to_date"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Explore Events
+                    </button>
+                </form>
+
+                <div
+                    id="events-loading"
+                    class="loading-state"
+                    hidden
+                >
+                    <div class="spinner"></div>
+                    <p>Discovering astronomical events...</p>
+                </div>
+
+                <div
+                    id="events-error"
+                    class="message message-error"
+                    role="alert"
+                    hidden
+                ></div>
+
+                <div
+                    id="events-empty"
+                    class="empty-state"
+                    hidden
+                >
+                    <h3>No events found</h3>
+                    <p>
+                        Try selecting a different date range.
+                    </p>
+                </div>
+
+                <div
+                    id="events-grid"
+                    class="events-grid"
+                ></div>
+            </section>
+
+            <section
+                id="event-details-section"
+                class="event-details-section"
+                aria-labelledby="details-heading"
+                hidden
+            >
+                <div class="section-heading">
+                    <div>
+                        <span class="section-label">SELECTED EVENT</span>
+                        <h2 id="details-heading">Event Details</h2>
+                    </div>
+
+                    <button
+                        type="button"
+                        id="back-to-events"
+                        class="btn btn-secondary"
+                    >
+                        Back to Events
+                    </button>
+                </div>
+
+                <div id="selected-event-details"></div>
+
+                <div class="ai-planner">
+                    <div class="section-heading">
+                        <div>
+                            <span class="section-label">SKYWATCH AI</span>
+                            <h2>Plan Your Observation</h2>
+                            <p>
+                                Choose how AI can help you prepare
+                                for this astronomical event.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        id="feature-grid"
+                        class="feature-grid"
+                    >
+                        <button
+                            type="button"
+                            class="feature-card"
+                            data-feature="locations"
+                        >
+                            <span class="feature-icon">⌖</span>
+                            <strong>Find Observation Locations</strong>
+                            <span>
+                                Discover potential places for viewing
+                                the event.
+                            </span>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="feature-card"
+                            data-feature="equipment"
+                        >
+                            <span class="feature-icon">◉</span>
+                            <strong>Recommend Equipment</strong>
+                            <span>
+                                Find suitable equipment for your
+                                experience and observation goals.
+                            </span>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="feature-card"
+                            data-feature="plan"
+                        >
+                            <span class="feature-icon">☷</span>
+                            <strong>Create Observation Plan</strong>
+                            <span>
+                                Prepare a step-by-step plan for
+                                your observation session.
+                            </span>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="feature-card"
+                            data-feature="facts"
+                        >
+                            <span class="feature-icon">✧</span>
+                            <strong>Explore Event Facts</strong>
+                            <span>
+                                Learn the science and interesting
+                                details behind the event.
+                            </span>
+                        </button>
+                    </div>
+
+                    <div
+                        id="feature-form-container"
+                        class="feature-form-container"
+                        hidden
+                    >
+                        <h3 id="feature-form-title">
+                            Personalize Your Recommendation
+                        </h3>
+
+                        <form id="recommendation-form">
+                            <div id="dynamic-form-fields"></div>
+
+                            <button
+                                type="submit"
+                                id="generate-button"
+                                class="btn btn-primary"
+                            >
+                                Generate AI Recommendation
+                            </button>
+                        </form>
+                    </div>
+
+                    <div
+                        id="recommendation-loading"
+                        class="loading-state"
+                        hidden
+                    >
+                        <div class="spinner"></div>
+                        <p>
+                            SkyWatch AI is preparing your recommendation...
+                        </p>
+                    </div>
+
+                    <div
+                        id="recommendation-error"
+                        class="message message-error"
+                        role="alert"
+                        hidden
+                    ></div>
+
+                    <div
+                        id="recommendation-result"
+                        class="recommendation-result"
+                        aria-live="polite"
+                        hidden
+                    ></div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <p>
+                SkyWatch AI · Astronomical Observation Planner
+            </p>
+
+            <p>
+                Event data provided by SpaceCatalog.
+                AI recommendations should be independently verified.
+            </p>
+        </footer>
+
+    </div>
+
+    <script type="module" src="./js/app.js"></script>
+</body>
+</html>
