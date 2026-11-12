@@ -14,6 +14,7 @@ skywatch/
 ├── docs/
 ├── frontend/
 ├── llm-observation-planner/    # AI-powered astronomical observation planner
+├── observation-conditions/    # gRPC-based weather assessment
 ├── parser/                     # NASA astronomy news scraper
 └── README.md
 ```
@@ -43,3 +44,10 @@ Analyzes official Slovenian tourism statistics using dynamically retrieved PC-Ax
 Integrates astronomical events from SpaceCatalog with AI-powered recommendations generated through OpenRouter. Provides personalized observation locations, equipment suggestions, observation plans, and astronomical facts using dynamically constructed prompts and structured JSON responses validated with Pydantic.
 
 [View LLM Observation Planner README](llm-observation-planner/README.md)
+
+
+### Observation Conditions
+
+Provides hourly weather forecasts, observation suitability scores, recommended observation windows, and location comparisons using gRPC and Open-Meteo.
+
+[View Observation Conditions README](observation-conditions/README.md)
