@@ -1,0 +1,90 @@
+
+syntax = "proto3";
+
+package observation_conditions;
+
+service ObservationConditionsService {
+    rpc GetWeatherForecast (WeatherForecastRequest) returns (WeatherForecastResponse);
+    rpc EvaluateConditions (ConditionsRequest) returns (ConditionsResponse);
+    rpc FindBestObservationWindows (ObservationWindowsRequest) returns (ObservationWindowsResponse);
+    rpc StreamLocationComparison (LocationComparisonRequest) returns (stream LocationComparisonResult);
+}
+
+// Geographic location used by all RPC methods.
+message Location {
+    string name = 1;
+    double latitude = 2;
+    double longitude = 3;
+}
+
+// Weather data for a specific hour.
+message HourlyWeather {
+    string time = 1;
+    double cloud_cover = 2;
+    double precipitation_probability = 3;
+    double precipitation = 4;
+    double wind_speed = 5;
+}
+
+// Weather forecast for one location and time range.
+message WeatherForecastRequest {
+    Location location = 1;
+    string start_time = 2;
+    string end_time = 3;
+}
+
+message WeatherForecastResponse {
+    Location location = 1;
+    repeated HourlyWeather hourly = 2;
+}
+
+// Evaluation of observation conditions at a selected time.
+message ConditionsRequest {
+    Location location = 1;
+    string time = 2;
+}
+
+message ConditionsResponse {
+    Location location = 1;
+    string time = 2;
+    double score = 3;
+    string rating = 4;
+    repeated string reasons = 5;
+    HourlyWeather weather = 6;
+}
+
+// Best weather windows within a selected time range.
+message ObservationWindowsRequest {
+    Location location = 1;
+    string start_time = 2;
+    string end_time = 3;
+}
+
+message ObservationWindow {
+    string start_time = 1;
+    string end_time = 2;
+    double average_score = 3;
+    string rating = 4;
+    bool is_recommended = 5;
+}
+
+message ObservationWindowsResponse {
+    Location location = 1;
+    repeated ObservationWindow windows = 2;
+}
+
+// Streaming comparison of multiple locations.
+message LocationComparisonRequest {
+    repeated Location locations = 1;
+    string start_time = 2;
+    string end_time = 3;
+}
+
+message LocationComparisonResult {
+    Location location = 1;
+    double score = 2;
+    string rating = 3;
+    repeated string reasons = 4;
+    string best_time = 5;
+    string error = 6;
+}
