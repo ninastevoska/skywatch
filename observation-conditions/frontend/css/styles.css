@@ -1,0 +1,438 @@
+:root {
+    color-scheme: dark;
+
+    --background: #0b1020;
+    --surface: #151d30;
+    --surface-hover: #1c2740;
+    --border: #29344b;
+
+    --text: #edf2ff;
+    --text-muted: #9ba9c3;
+    --accent: #a5a1ff;
+    --accent-hover: #c0bdff;
+
+    --success: #69d6ac;
+    --warning: #f0bf74;
+    --danger: #f18c99;
+
+    --radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.container {
+    width: min(100% - 40px, 980px);
+    margin: 0 auto;
+}
+
+.site-header {
+    border-bottom: 1px solid var(--border);
+    background: #101729;
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    min-height: 72px;
+}
+
+.brand {
+    color: var(--text);
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+}
+
+.brand::before {
+    content: "✦";
+    color: var(--accent);
+    margin-right: 10px;
+}
+
+.module-name {
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.page-intro {
+    padding: 48px 0 24px;
+}
+
+.page-intro h1 {
+    margin: 0 0 12px;
+    font-size: clamp(28px, 5vw, 38px);
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+
+.page-intro p {
+    max-width: 660px;
+    margin: 0;
+    color: var(--text-muted);
+}
+
+.card {
+    margin-bottom: 20px;
+    padding: 28px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.card h2 {
+    margin: 0 0 20px;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+.card > p {
+    color: var(--text-muted);
+    margin-top: -8px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+    min-width: 0;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+label {
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+input,
+select,
+button {
+    font: inherit;
+}
+
+input,
+select {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 13px;
+    color: var(--text);
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(165, 161, 255, 0.12);
+}
+
+input::placeholder {
+    color: #75839e;
+}
+
+button {
+    min-height: 42px;
+    padding: 9px 16px;
+    color: #101426;
+    background: var(--accent);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+button:hover {
+    background: var(--accent-hover);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.button-secondary {
+    color: var(--text);
+    background: var(--surface-hover);
+    border-color: var(--border);
+}
+
+.button-secondary:hover {
+    background: #283550;
+}
+
+.helper-text {
+    margin: 14px 0 0;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.location-results {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.location-option {
+    width: 100%;
+    padding: 12px 14px;
+    text-align: left;
+    color: var(--text);
+    background: var(--surface-hover);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-weight: 400;
+}
+
+.location-option:hover {
+    background: #293650;
+}
+
+.location-option small {
+    display: block;
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.selected-location {
+    margin-top: 16px;
+    padding: 12px 14px;
+    background: rgba(105, 214, 172, 0.07);
+    border: 1px solid rgba(105, 214, 172, 0.25);
+    border-radius: 8px;
+    color: var(--success);
+    font-size: 14px;
+}
+
+.coordinates-section {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+}
+
+.coordinates-section summary {
+    color: var(--text-muted);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.coordinates-section .form-row {
+    margin: 16px 0;
+}
+
+.status-message {
+    margin-bottom: 20px;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.status-message:empty {
+    display: none;
+}
+
+.status-message.error {
+    color: var(--danger);
+}
+
+.status-message.success {
+    color: var(--success);
+}
+
+/* Weather and observation results */
+
+.score-value {
+    color: var(--accent);
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.rating {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 3px 10px;
+    border-radius: 6px;
+    background: var(--surface-hover);
+    color: var(--text);
+    font-size: 13px;
+}
+
+.rating.excellent,
+.rating.good {
+    color: var(--success);
+}
+
+.rating.fair {
+    color: var(--warning);
+}
+
+.rating.poor,
+.rating.very-poor {
+    color: var(--danger);
+}
+
+.weather-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+.weather-item {
+    padding: 16px;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.weather-item .label {
+    display: block;
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.weather-item .value {
+    display: block;
+    margin-top: 5px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.result-list {
+    margin: 16px 0 0;
+    padding-left: 20px;
+    color: var(--text-muted);
+}
+
+.window-item,
+.comparison-item {
+    padding: 16px;
+    margin-top: 12px;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.window-item h3,
+.comparison-item h3 {
+    margin: 0 0 8px;
+    font-size: 15px;
+}
+
+.window-item p,
+.comparison-item p {
+    margin: 5px 0;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.comparison-locations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.location-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 12px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    color: var(--text);
+    background: var(--surface-hover);
+    font-size: 13px;
+}
+
+.location-chip button {
+    min-height: auto;
+    padding: 0;
+    color: var(--text-muted);
+    background: transparent;
+    border: none;
+    font-size: 16px;
+}
+
+.location-chip button:hover {
+    color: var(--danger);
+    background: transparent;
+}
+
+.comparison-results {
+    margin-top: 16px;
+}
+
+/* Footer */
+
+.site-footer {
+    margin-top: 40px;
+    padding: 25px 0;
+    border-top: 1px solid var(--border);
+}
+
+.site-footer p {
+    margin: 4px 0;
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 600px) {
+    .container {
+        width: min(100% - 28px, 980px);
+    }
+
+    .site-header .container {
+        min-height: 60px;
+    }
+
+    .module-name {
+        font-size: 11px;
+    }
+
+    .page-intro {
+        padding-top: 32px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+#date-heading + .form-row + .helper-text {
+    margin-top: 20px;
+}

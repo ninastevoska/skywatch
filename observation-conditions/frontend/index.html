@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Check weather conditions for astronomical observation.">
+
+    <title>Observation Conditions | SkyWatch</title>
+
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script type="module" src="/static/js/app.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="brand">SkyWatch</a>
+            <span class="module-name">Observation Conditions</span>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-intro">
+            <h1>Plan Your Observation</h1>
+            <p>
+                Explore weather forecasts, evaluate observation conditions,
+                and find the best time and location to observe the night sky.
+            </p>
+        </section>
+
+        <section class="card" aria-labelledby="location-heading">
+            <h2 id="location-heading">Observation Location</h2>
+
+            <div class="form-group">
+                <label for="location-search">Search for a location</label>
+                <input
+                    type="search"
+                    id="location-search"
+                    placeholder="Enter a city or location..."
+                    autocomplete="off"
+                >
+                <div id="location-results" class="location-results"></div>
+            </div>
+
+            <div id="selected-location" class="selected-location" hidden></div>
+
+            <details class="coordinates-section">
+                <summary>Enter coordinates manually</summary>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="latitude">Latitude</label>
+                        <input
+                            type="number"
+                            id="latitude"
+                            min="-90"
+                            max="90"
+                            step="any"
+                            placeholder="46.55583"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="longitude">Longitude</label>
+                        <input
+                            type="number"
+                            id="longitude"
+                            min="-180"
+                            max="180"
+                            step="any"
+                            placeholder="15.64593"
+                        >
+                    </div>
+                </div>
+
+                <button type="button" id="use-coordinates" class="button-secondary">
+                    Use Coordinates
+                </button>
+            </details>
+        </section>
+
+        <section class="card" aria-labelledby="date-heading">
+            <h2 id="date-heading">Observation Time</h2>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="observation-date">Observation date</label>
+                    <input type="date" id="observation-date">
+                </div>
+
+                <div class="form-group">
+                    <label for="observation-hour">Evaluate conditions at</label>
+                    <select id="observation-hour">
+                        <option value="18">18:00</option>
+                        <option value="19">19:00</option>
+                        <option value="20">20:00</option>
+                        <option value="21" selected>21:00</option>
+                        <option value="22">22:00</option>
+                        <option value="23">23:00</option>
+                        <option value="0">00:00 (next day)</option>
+                        <option value="1">01:00 (next day)</option>
+                        <option value="2">02:00 (next day)</option>
+                        <option value="3">03:00 (next day)</option>
+                        <option value="4">04:00 (next day)</option>
+                        <option value="5">05:00 (next day)</option>
+                    </select>
+                </div>
+            </div>
+
+            <p class="helper-text">
+                Weather forecasts are available for today and the next 14 days.
+                Times will be displayed in the selected location's time zone.
+            </p>
+        </section>
+
+        <div id="status-message" class="status-message" role="status"></div>
+
+        <section id="forecast-section" class="card" hidden>
+            <h2>Hourly Weather Forecast</h2>
+            <div id="forecast-content"></div>
+        </section>
+
+        <section id="conditions-section" class="card" hidden>
+            <h2>Observation Conditions</h2>
+            <div id="conditions-content"></div>
+        </section>
+
+        <section id="windows-section" class="card" hidden>
+            <h2>Best Observation Windows</h2>
+            <div id="windows-content"></div>
+        </section>
+
+        <section class="card" aria-labelledby="comparison-heading">
+            <h2 id="comparison-heading">Compare Locations</h2>
+            <p>
+                Add multiple locations to compare their observation conditions.
+                Results will appear as they become available.
+            </p>
+
+            <div id="comparison-locations" class="comparison-locations"></div>
+
+            <div id="comparison-status" role="status"></div>
+            <div id="comparison-results" class="comparison-results"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>SkyWatch | Weather data provided by Open-Meteo</p>
+            <p>
+                Weather-based estimates only. Astronomical visibility,
+                light pollution, and site accessibility are not evaluated.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
