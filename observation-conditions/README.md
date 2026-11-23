@@ -47,7 +47,7 @@ The assessment considers weather conditions only, not light pollution, astronomi
 flowchart TD
     A["Frontend<br/>HTML, CSS, JavaScript"]
     B["FastAPI<br/>REST API + SSE"]
-    C["gRPC Server<br/>4 RPC methods"]
+    C["gRPC Server<br/> RPC methods"]
     D["Business Logic<br/>Scoring + Observation Windows"]
     E["Open-Meteo API<br/>Weather Forecasts"]
 
