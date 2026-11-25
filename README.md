@@ -14,6 +14,7 @@ skywatch/
 ├── docs/
 ├── frontend/
 ├── llm-observation-planner/    # AI-powered astronomical observation planner
+├── location-finder/           # Named Pipes-based location discovery and routing
 ├── observation-conditions/    # gRPC-based weather assessment
 ├── parser/                     # NASA astronomy news scraper
 └── README.md
@@ -51,3 +52,9 @@ Integrates astronomical events from SpaceCatalog with AI-powered recommendations
 Provides hourly weather forecasts, observation suitability scores, recommended observation windows, and location comparisons using gRPC and Open-Meteo.
 
 [View Observation Conditions README](observation-conditions/README.md)
+
+### Location Finder
+
+Discovers reachable candidate locations for astronomical observation based on transport mode, travel time, distance, and location categories. Integrates Open-Meteo, openrouteservice, and openpoiservice, using Windows Named Pipes for communication between the FastAPI application and an independent location worker.
+
+[View Location Finder README](location-finder/README.md)
