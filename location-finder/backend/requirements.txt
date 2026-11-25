@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+httpx
+pydantic
+pydantic-settings
+python-dotenv
+pywin32
+shapely>=2.1
+pyproj
+pytest
